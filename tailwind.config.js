@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         "primary-text": "#000000",
-        "secondary-text": "#1A202C",  
+        "secondary-text": "#1A202C",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
