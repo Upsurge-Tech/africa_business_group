@@ -11,23 +11,27 @@ export default function OurMissionAndVision() {
   ]
 
   return (
-    <div className="p-[2rem] flex flex-col gap-[65px]">
-      <div>
-        <p className="text-[35px]">Know the Business</p>
-        <h2 className="text-[35px] font-bold">Our Vision and Mission</h2>
-      </div>
-      <br />
-      <ValueMissionCard
-        bulletIcon={'/images/vision-and-mission/target.svg'}
-        title={'Mission'}
-        statements={missions}
-      />
+    <div className="p-[2rem]">
+      <div className="flex flex-col gap-[44px] m-auto  max-w-[1211px]">
+        <div>
+          <p className="text-[35px]">Know the Business</p>
+          <h2 className="text-[35px] font-bold">Our Vision and Mission</h2>
+        </div>
+        <br />
+        <div className="flex flex-col md:flex-row gap-[65px]">
+          <ValueMissionCard
+            bulletIcon={'/images/vision-and-mission/target.svg'}
+            title={'Mission'}
+            statements={missions}
+          />
 
-      <ValueMissionCard
-        bulletIcon={'/images/vision-and-mission/setting.svg'}
-        title={'Vision'}
-        statements={visions}
-      />
+          <ValueMissionCard
+            bulletIcon={'/images/vision-and-mission/setting.svg'}
+            title={'Vision'}
+            statements={visions}
+          />
+        </div>
+      </div>
     </div>
   )
 }
