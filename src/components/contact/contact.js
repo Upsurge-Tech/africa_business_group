@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <main id="contact" className="  min-w-screen ">
+    <main id="contact" className="  min-w-screen  ">
       <div className="  flex flex-col min-w-screen">
         <div className=" h-32 min-w-screen bg-black text-white flex flex-col items-center justify-center gap-5">
           <div className="w-14 border-b-4 border-solid border-[#00407B]"></div>
