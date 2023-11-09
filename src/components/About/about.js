@@ -11,7 +11,7 @@ import Image from "next/image";
 const About = () => {
   return (
     // <Image src={back} fill={true} alt="background" />
-    <main className="relative min-w-screen min-h-screen">
+    <main id="about" className="relative min-w-screen min-h-screen">
       <Image
         src={ellipse1}
         className="w-10 h-10 absolute top-48 left-1/2"
