@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
 
 const NavBar = () => {
   const router = useRouter();
@@ -29,9 +31,14 @@ const NavBar = () => {
         } w-full z-20 top-0 left-0 text-secondary-text shadow-slate-200 shadow-lg`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ml-4 md:ml-12 mr-8 md:mr-16">
-          <a href="/#" className="flex items-center">
-            <img src="/images/home/logo.png" />
-          </a>
+          <Link href="/#" className="flex items-center">
+            <Image
+              src="/images/home/logo.png"
+              width={"auto"}
+              height={"auto"}
+              alt="africa bussiness group logo"
+            />
+          </Link>
           <div className="flex md:order-1">
             <button
               type="button"
@@ -65,7 +72,7 @@ const NavBar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 lg:space-x-16 md:mt-0 md:border-0 h-full">
               {links.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     onClick={() => handleActive(link.name)}
                     href={`${link.to}`}
                     className={`${
@@ -79,7 +86,7 @@ const NavBar = () => {
                     {active === link.name && (
                       <span className="transition absolute md:top-10 lg:top-12 left-0 w-full h-0 md:h-1 bg-blue-500 transision duration-150"></span>
                     )}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
