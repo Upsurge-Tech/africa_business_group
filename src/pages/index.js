@@ -7,6 +7,7 @@ import Contact from "@/components/contact/contact";
 import About from "@/components/About/about";
 import Partners from "@/components/partner/partner";
 import OurMissionAndVision from '@/components/our-mission-and-vision'
+import TeamSection from "@/components/team/team_section"
 
 export default function Home() {
   return (
@@ -15,8 +16,10 @@ export default function Home() {
       <HomePage />
       <About />
       <OurMissionAndVision />
-      <Partners/>
+      <TeamSection />
+      <Partners />
       <Contact />
+
     </main>
   )
 }
