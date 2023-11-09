@@ -59,7 +59,7 @@ export default function Services() {
   )
 
   return (
-    <section>
+    <section id="services">
       <div className="flex flex-col items-center justify-center bg-black min-h-[128px]">
         {/* header */}
         <img src="/images/services/deco-line.svg" />
