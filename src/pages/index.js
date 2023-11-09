@@ -8,14 +8,13 @@ import Contact from "@/components/contact/contact";
 
 import About from "@/components/About/about";
 
-// const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <main className="bg-white">
       <NavBar />
       <HomePage />
       <About />
+      <Contact />
       <Contact />
     </main>
   );
