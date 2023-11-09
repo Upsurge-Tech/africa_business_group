@@ -11,7 +11,8 @@ import Image from "next/image";
 const About = () => {
   return (
     // <Image src={back} fill={true} alt="background" />
-    <main id="about" className="relative min-w-screen min-h-screen">
+
+    <main id="about" className="relative min-w-screen ">
       <Image
         src={ellipse1}
         className="w-10 h-10 absolute top-48 left-1/2"
@@ -22,7 +23,7 @@ const About = () => {
         className="w-24 h-24 absolute bottom-12 right-14 z-10"
         alt="ell_2"
       />
-      <div className=" absolute flex flex-col min-w-screen">
+      <div className=" relative flex flex-col min-w-screen">
         <div className="h-32 min-w-full bg-black text-white flex flex-col items-center justify-center gap-5">
           <div className="w-14 border-b-4 border-solid border-[#00407B]"></div>
           <div className="text-2xl">About Us</div>
