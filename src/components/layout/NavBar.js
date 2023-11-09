@@ -90,13 +90,14 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <button
-              onClick="#contact"
-              type="button"
-              className="focus:ring-4 focus:outline-none uppercase focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3 text-center border border-primary ml-4 md:ml-8 bg-gradient-to-r from-[#100F36] to-[#265E32] text-white"
-            >
-              Contact
-            </button>
+            <a href="#contact">
+              <button
+                type="button"
+                className="focus:ring-4 focus:outline-none uppercase focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3 text-center border border-primary ml-4 md:ml-8 bg-gradient-to-r from-[#100F36] to-[#265E32] text-white"
+              >
+                Contact
+              </button>
+            </a>
           </div>
         </div>
       </nav>
