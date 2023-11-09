@@ -11,17 +11,23 @@ export default function OurMissionAndVision() {
   ]
 
   return (
-    <div>
-      <p className="text-[35px]">Know the Business</p>
-      <h2 className="text-[35px] font-bold">Our Vision and Mission</h2>
+    <div className="p-[2rem] flex flex-col gap-[65px]">
+      <div>
+        <p className="text-[35px]">Know the Business</p>
+        <h2 className="text-[35px] font-bold">Our Vision and Mission</h2>
+      </div>
       <br />
       <ValueMissionCard
-        bulletIcon={''}
+        bulletIcon={'/images/vision-and-mission/target.svg'}
         title={'Mission'}
         statements={missions}
       />
 
-      <ValueMissionCard bulletIcon={''} title={'Vision'} statements={visions} />
+      <ValueMissionCard
+        bulletIcon={'/images/vision-and-mission/setting.svg'}
+        title={'Vision'}
+        statements={visions}
+      />
     </div>
   )
 }
@@ -42,7 +48,8 @@ function ValueMissionCard({ bulletIcon, title, statements }) {
         className={
           'bg-[#D4D4D4] w-[343px] h-[658px] opacity-[58%] top-[40%] left-[90%] ' +
           commonClass
-        }div
+        }
+        div
       ></div>
       <div
         className={
@@ -70,7 +77,7 @@ function ValueMissionCard({ bulletIcon, title, statements }) {
 function ValueMissionStatement({ statement, bulletIcon }) {
   return (
     <div className="rounded-[25px] border p-5 bg-gradient-to-b from-[#C6C2C6] to-transparent border-[1px] border-[#E7DAED] flex gap-[25px] items-center">
-      <span>img</span>
+      <img src={bulletIcon} alt="bullet point" />
       <span>{statement}</span>
     </div>
   )
