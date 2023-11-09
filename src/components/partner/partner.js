@@ -1,7 +1,7 @@
 import Carousal from "@/components/partner/carousal";
 import React from "react";
 
-const partners = () => {
+const Partners = () => {
   return (
     <div>
       <div className="">
@@ -77,4 +77,4 @@ const partners = () => {
   );
 };
 
-export default partners;
+export default Partners;

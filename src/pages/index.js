@@ -4,6 +4,7 @@ import NavBar from "@/components/layout/NavBar";
 import HomePage from "@/components/home/HomePage";
 import Contact from "@/components/contact/contact";
 import About from "@/components/About/about";
+import Partners from "@/components/partner/partner";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <HomePage />
       <About />
       <Contact />
+      <Partners/>
     </main>
   );
 }
