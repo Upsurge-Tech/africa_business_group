@@ -4,18 +4,30 @@ import art2 from "../../../public/images/about/art_2.png";
 import art3 from "../../../public/images/about/art_3.png";
 import art4 from "../../../public/images/about/art_4.png";
 import back from "../../../public/images/about/polygon-scatter-haikei.svg";
+import ellipse1 from "../../../public/images/about/Ellipse 193.svg";
+import ellipse2 from "../../../public/images/about/Ellipse 194.svg";
 import Image from "next/image";
 
 const About = () => {
   return (
+    // <Image src={back} fill={true} alt="background" />
     <main className="relative min-w-screen min-h-screen">
-      <Image src={back} fill={true} alt="background" />
+      <Image
+        src={ellipse1}
+        className="w-10 h-10 absolute top-48 left-1/2"
+        alt="ell_1"
+      />
+      <Image
+        src={ellipse2}
+        className="w-24 h-24 absolute bottom-12 right-14 z-10"
+        alt="ell_2"
+      />
       <div className=" absolute flex flex-col min-w-screen">
         <div className="h-32 min-w-full bg-black text-white flex flex-col items-center justify-center gap-5">
           <div className="w-14 border-b-4 border-solid border-[#00407B]"></div>
           <div className="text-2xl">About Us</div>
         </div>
-        <div className="flex flex-col min-w-screen pb-40 pl-40 pr-40 pt-20 ">
+        <div className="flex flex-col min-w-screen pb-10 pl-10 pr-10 pt-20 md:pl-40 md:pr-40 ">
           <div className="flex flex-col text-black gap-5">
             <div className="w-14 border-b-4 border-solid border-[#00407B]"></div>
             <div className="text-2xl">Know the Business</div>
