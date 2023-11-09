@@ -77,7 +77,7 @@ const NavBar = () => {
                   >
                     {link.name}
                     {active === link.name && (
-                      <span className="absolute md:top-10 lg:top-12 left-0 w-full h-0 md:h-1 bg-blue-500 transision duration-75"></span>
+                      <span className="transition absolute md:top-10 lg:top-12 left-0 w-full h-0 md:h-1 bg-blue-500 transision duration-150"></span>
                     )}
                   </a>
                 </li>
@@ -85,7 +85,7 @@ const NavBar = () => {
             </ul>
             <button
               type="button"
-              className="focus:ring-4 focus:outline-none uppercase focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center border border-primary ml-8 bg-gradient-to-r from-[#100F36] to-[#265E32] text-white"
+              className="focus:ring-4 focus:outline-none uppercase focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3 text-center border border-primary ml-4 md:ml-8 bg-gradient-to-r from-[#100F36] to-[#265E32] text-white"
             >
               Contact
             </button>
