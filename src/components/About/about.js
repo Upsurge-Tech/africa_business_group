@@ -21,7 +21,7 @@ const About = () => {
             <div className="text-2xl">Know the Business</div>
             <div className="text-2xl font-bold pb-10">We are Commited to</div>
           </div>
-          <div className="flex flex-row gap-10 ">
+          <div className="flex flex-col lg:flex-row gap-10 ">
             <div className="flex flex-col gap-10">
               <div className="flex flex-row bg-gradient-to-b from-[#B7C5BC] via-[#B7C5BC] to-[#ece6ef]  rounded-2xl p-10  gap-3">
                 <Image className="w-14 h-14" src={art1} alt="art_1" />
