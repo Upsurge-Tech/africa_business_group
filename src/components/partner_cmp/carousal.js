@@ -70,7 +70,7 @@ const CardCarousel = () => {
           <img
             src="/partner_img/Right.png"
             alt="Right_arrow"
-            className="w-full"
+            className="w-full transform rotate-180"
           />
         </div>
       </button>
