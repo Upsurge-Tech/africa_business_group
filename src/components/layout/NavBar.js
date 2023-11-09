@@ -1,33 +1,32 @@
-import { React, useState } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import Image from "next/image";
+import { React, useState } from 'react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const NavBar = () => {
-  const router = useRouter();
+  const router = useRouter()
   const links = [
-
-    { name: "Home", to: "#" },
-    { name: "About Us", to: "#about" },
-    { name: "services", to: "#" },
-    { name: "market", to: "#" },
-    { name: "partners", to: "#" },
-  ];
-  const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState("");
+    { name: 'Home', to: '#' },
+    { name: 'About Us', to: '#about' },
+    { name: 'services', to: '#services' },
+    { name: 'market', to: '#' },
+    { name: 'partners', to: '#' },
+  ]
+  const [isOpen, setIsOpen] = useState(false)
+  const [active, setActive] = useState('')
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
   const handleActive = (name) => {
-    setActive(name);
-    console.log(name);
-  };
+    setActive(name)
+    console.log(name)
+  }
 
   return (
     <div className="">
       <nav
         className={`${
-          isOpen ? "bg-[#FFFFFF]" : "bg-white"
+          isOpen ? 'bg-[#FFFFFF]' : 'bg-white'
         } w-full z-20 top-0 left-0 text-secondary-text shadow-slate-200 shadow-lg`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ml-4 md:ml-12 mr-8 md:mr-16">
@@ -65,7 +64,7 @@ const NavBar = () => {
           </div>
           <div
             className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
-              isOpen ? "block" : "hidden"
+              isOpen ? 'block' : 'hidden'
             }`}
             id="navbar-sticky"
           >
@@ -77,8 +76,8 @@ const NavBar = () => {
                     href={`${link.to}`}
                     className={`${
                       active === link.name
-                        ? "text-blue-500 font-semibold"
-                        : "py-2"
+                        ? 'text-blue-500 font-semibold'
+                        : 'py-2'
                     } uppercase relative block text-sm pl-3 pr-4 transision duration-75 md:hover:bg-transparent md:hover:text-blue-500 md:p-0`}
                     aria-current="page"
                   >
@@ -102,7 +101,7 @@ const NavBar = () => {
         </div>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
