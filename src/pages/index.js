@@ -15,6 +15,7 @@ export default function Home() {
     <main className="bg-white">
       <NavBar />
       <HomePage />
+      <About />
       <Contact />
     </main>
   );
