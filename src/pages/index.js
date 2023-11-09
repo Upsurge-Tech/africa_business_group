@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Contact from "@/components/contact/contact";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "@/components/layout/NavBar";
+import HomePage from "@/components/home/HomePage";
 
 export default function Home() {
   return (
-    <main>
-      <Contact />
+    <main className="bg-white">
+      <NavBar />
+      <HomePage />
     </main>
   );
 }
