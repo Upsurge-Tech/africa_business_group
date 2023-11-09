@@ -1,9 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import NavBar from '@/components/layout/NavBar'
-import HomePage from '@/components/home/HomePage'
-import Contact from '@/components/contact/contact'
-import About from '@/components/About/about'
+
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import NavBar from "@/components/layout/NavBar";
+import HomePage from "@/components/home/HomePage";
+import Contact from "@/components/contact/contact";
+import About from "@/components/About/about";
+import Partners from "@/components/partner/partner";
 import OurMissionAndVision from '@/components/our-mission-and-vision'
 
 export default function Home() {
@@ -12,8 +14,8 @@ export default function Home() {
       <NavBar />
       <HomePage />
       <About />
-      <Contact />
       <OurMissionAndVision />
+      <Partners/>
     </main>
   )
 }
