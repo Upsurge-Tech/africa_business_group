@@ -6,6 +6,7 @@ import Contact from '@/components/contact/contact'
 import About from '@/components/About/about'
 import Partners from '@/components/partner/partner'
 import OurMissionAndVision from '@/components/our-mission-and-vision'
+import TeamSection from "@/components/team/team_section"
 import Services from '@/components/services'
 
 export default function Home() {
@@ -15,9 +16,11 @@ export default function Home() {
       <HomePage />
       <About />
       <OurMissionAndVision />
+      <TeamSection />
       <Services />
       <Partners />
       <Contact />
+
     </main>
   )
 }
