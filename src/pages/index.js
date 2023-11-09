@@ -16,6 +16,7 @@ export default function Home() {
       <About />
       <OurMissionAndVision />
       <Partners/>
+      <Contact />
     </main>
   )
 }
