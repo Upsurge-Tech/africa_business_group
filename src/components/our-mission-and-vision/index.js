@@ -15,7 +15,7 @@ export default function OurMissionAndVision() {
   return (
     <div className="pt-[2rem] pb-[5rem] bg-[#262626]">
       <div className="flex flex-col gap-[44px] m-auto  max-w-[1211px]">
-        <div>
+        <div className="text-white">
           <img src="/images/vision-and-mission/deco-line.svg" />
           <p className="text-[35px]">Know the Business</p>
           <h2 className="text-[35px] font-bold">Our Vision and Mission</h2>
