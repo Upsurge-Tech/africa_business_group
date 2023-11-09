@@ -6,9 +6,9 @@ import Image from "next/image";
 const NavBar = () => {
   const router = useRouter();
   const links = [
-    { name: "Home", to: "#" },
+    
+    { name: "About Us", to: "#about" },
     { name: "About Us", to: "#" },
-
     { name: "services", to: "#" },
     { name: "market", to: "#" },
     { name: "partners", to: "#" },
