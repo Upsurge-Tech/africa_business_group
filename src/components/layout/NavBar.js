@@ -6,9 +6,9 @@ import Image from "next/image";
 const NavBar = () => {
   const router = useRouter();
   const links = [
-    { name: "Home", to: "#" },
-    { name: "About Us", to: "#" },
 
+    { name: "Home", to: "#" },
+    { name: "About Us", to: "#about" },
     { name: "services", to: "#" },
     { name: "market", to: "#" },
     { name: "partners", to: "#" },
@@ -90,12 +90,14 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <button
-              type="button"
-              className="focus:ring-4 focus:outline-none uppercase focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3 text-center border border-primary ml-4 md:ml-8 bg-gradient-to-r from-[#100F36] to-[#265E32] text-white"
-            >
-              Contact
-            </button>
+            <a href="#contact">
+              <button
+                type="button"
+                className="focus:ring-4 focus:outline-none uppercase focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3 text-center border border-primary ml-4 md:ml-8 bg-gradient-to-r from-[#100F36] to-[#265E32] text-white"
+              >
+                Contact
+              </button>
+            </a>
           </div>
         </div>
       </nav>
