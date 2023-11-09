@@ -34,8 +34,8 @@ const NavBar = () => {
           <Link href="/#" className="flex items-center">
             <Image
               src="/images/home/logo.png"
-              width={"auto"}
-              height={"auto"}
+              width={170}
+              height={170}
               alt="africa bussiness group logo"
             />
           </Link>
