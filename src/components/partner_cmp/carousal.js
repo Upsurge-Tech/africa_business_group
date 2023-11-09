@@ -66,7 +66,7 @@ const CardCarousel = () => {
   return (
     <div className="flex justify-between mt-16 md:mt-10 w-4/5 mx-auto">
       <button className="" onClick={handlePrevious}>
-        <div className="md:w-[80px] md:h-[80px] w-[40px] h-[40px]">
+        <div className="md:w-[80px] md:h-[80px] w-[60px] h-[60px]">
           <img
             src="/partner_img/Right.png"
             alt="Right_arrow"
@@ -78,7 +78,7 @@ const CardCarousel = () => {
         <div className="md:w-[400px] w-full text-center mx-auto">
           <p className="text-[#718096]">{currentCard.quote}</p>
         </div>
-        <div className="flex justify-between w-full items-center mx-auto mt-[60px]">
+        <div className="flex justify-between w-full items-center mx-auto md:mt-[60px] mt-[30px]">
           <img
             src={previousCard.image}
             alt="Person"
@@ -103,7 +103,7 @@ const CardCarousel = () => {
         </div>
       </div>
       <button className="" onClick={handleNext}>
-        <div className="md:w-[80px] md:h-[80px] w-[40px] h-[40px]">
+        <div className="md:w-[80px] md:h-[80px] w-[60px] h-[60px]">
           <img
             src="/partner_img/Right.png"
             alt="Right_arrow"

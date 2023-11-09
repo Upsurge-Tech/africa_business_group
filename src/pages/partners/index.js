@@ -1,5 +1,5 @@
-import Carousal from '@/components/partner_cmp/carousal';
-import React from 'react';
+import Carousal from "@/components/partner_cmp/carousal";
+import React from "react";
 
 const partners = () => {
   return (
@@ -7,15 +7,20 @@ const partners = () => {
       <div className="">
         <h1 className="text-center py-10 text-[20px]">Partners</h1>
         <div className="bg-white text-black">
-          <h1 className="w-[250px] py-4 mx-auto text-center text-[25px]">
-            Why cutomers love <br />
-            <span className="font-bold">working with us</span>
-          </h1>
-          <Carousal/>
-          <div className="md:mt-20">
+          <div className="flex flex-col py-4">
+            <div className="mx-auto">
+              <img src="/partner_img/Line.png" alt="img" />
+            </div>
+            <h1 className="w-[250px] py-4 mx-auto text-center text-[25px]">
+              Why cutomers love <br />
+              <span className="font-bold">working with us</span>
+            </h1>
+          </div>
+          <Carousal />
+          <div className="md:mt-20 mt-10">
             <div className="flex flex-col">
-              <div className="h-10">
-                <hr className="text-[#00407B] w-[70px] h-full mx-auto leading-[10px]" />
+              <div className="mx-auto">
+                <img src="/partner_img/Line.png" alt="img" />
               </div>
               <p className="text-center text-[30px]">
                 Our
@@ -70,6 +75,6 @@ const partners = () => {
       </div>
     </div>
   );
-}
+};
 
-export default partners
+export default partners;
