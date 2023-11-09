@@ -1,14 +1,13 @@
-// import Image from "next/image";
-// import { Inter } from "next/font/google";
-
-import About from "@/components/About/about";
-
-// const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import NavBar from "@/components/layout/NavBar";
+import HomePage from "@/components/home/HomePage";
 
 export default function Home() {
   return (
-    <main className="">
-      <About />
+    <main className="bg-white">
+      <NavBar />
+      <HomePage />
     </main>
   );
 }
