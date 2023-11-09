@@ -12,10 +12,16 @@ export default function OurMissionAndVision() {
 
   return (
     <div>
-      <p>Know the Business</p>
-      <h2>Our Vision and Mission</h2>
+      <p className="text-[35px]">Know the Business</p>
+      <h2 className="text-[35px] font-bold">Our Vision and Mission</h2>
       <br />
-      <ValueMissionCard />
+      <ValueMissionCard
+        bulletIcon={''}
+        title={'Mission'}
+        statements={missions}
+      />
+
+      <ValueMissionCard bulletIcon={''} title={'Vision'} statements={visions} />
     </div>
   )
 }
@@ -24,7 +30,7 @@ function ValueMissionCard({ bulletIcon, title, statements }) {
   const commonClass =
     ' rounded-[100%] transform translate-x-[-50%] translate-y-[-50%] absolute blur-[121px]'
   return (
-    <div className="h-[477px] bg-[white] relative border overflow-hidden rounded-[23px]">
+    <div className="bg-[white] relative border overflow-hidden rounded-[23px] text-black p-[35px]">
       {/* eclipses */}
       <div
         className={
@@ -36,7 +42,7 @@ function ValueMissionCard({ bulletIcon, title, statements }) {
         className={
           'bg-[#D4D4D4] w-[343px] h-[658px] opacity-[58%] top-[40%] left-[90%] ' +
           commonClass
-        }
+        }div
       ></div>
       <div
         className={
@@ -44,10 +50,28 @@ function ValueMissionCard({ bulletIcon, title, statements }) {
           commonClass
         }
       ></div>
-      <div className="absolute w-[80%] transform translate-x-[-50%] translate-y-[-50%] top-[80%] bg-red ">
-        ddd
+
+      {/* end eclipses */}
+
+      <div className="gap-[22px] flex flex-col z-[99]">
+        {statements.map((statement) => (
+          <ValueMissionStatement
+            key={statement}
+            statement={statement}
+            bulletIcon={bulletIcon}
+          />
+        ))}
+        <h3 className="text-center text-[32px] font-bold">{title}</h3>
       </div>
-      here
+    </div>
+  )
+}
+
+function ValueMissionStatement({ statement, bulletIcon }) {
+  return (
+    <div className="rounded-[25px] border p-5 bg-gradient-to-b from-[#C6C2C6] to-transparent border-[1px] border-[#E7DAED] flex gap-[25px] items-center">
+      <span>img</span>
+      <span>{statement}</span>
     </div>
   )
 }
