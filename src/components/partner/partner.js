@@ -1,4 +1,4 @@
-import Carousal from "@/components/partner_cmp/carousal";
+import Carousal from "@/components/partner/carousal";
 import React from "react";
 
 const partners = () => {
