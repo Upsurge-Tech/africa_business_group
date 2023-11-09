@@ -7,7 +7,7 @@ const NavBar = () => {
   const router = useRouter();
   const links = [
     { name: "Home", to: "#" },
-    { name: "About Us", to: "#" },
+    { name: "About Us", to: "#about" },
 
     { name: "services", to: "#" },
     { name: "market", to: "#" },
