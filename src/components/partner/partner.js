@@ -7,7 +7,7 @@ const Partners = () => {
       <div className="">
         <div className="flex flex-col items-center py-10 bg-black text-white text-[30px]">
           <div className="">
-            <img src="/partner_img/Line.png" alt="img"/>
+            <img src="/partner_img/Line.png" alt="img" />
           </div>
           <p className="text-center">Partners</p>
         </div>
