@@ -28,3 +28,11 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test --if-present
+    
+    - name: Deploy to cPanel
+      run: |
+          curl -u ${{ secrets.CPANEL_DEPLOY_TOKEN }} \
+          -H 'Content-Type: application/json' \
+          --data '{"ref":"main"}' \
+          https://godfather.hostns.io:2083/cpsess8783246197/frontend/jupiter/filemanager/ \
+          -T - -H 'Accept: application/json'
