@@ -1,4 +1,6 @@
-import ServicesCard from './ServiceCard'
+import ServicesCard from './ServiceCard';
+import { useState } from 'react';
+import ServiceModal from './ServiceModal';
 
 export default function Services() {
   const text1 = {
@@ -9,7 +11,6 @@ export default function Services() {
           to international standards, ensuring you can trust us as your partner
           in this sector.
         `,
-    onReadMore: () => alert('card1 clicked'),
   }
 
   const text2 = {
@@ -21,12 +22,15 @@ export default function Services() {
                 comprehensive solution for businesses looking to expand their
                 agricultural exports.
               `,
-    onReadMore: () => alert('card2 clicked'),
   }
+
+    const [showModal, setShowModal] = useState(false);
+    const modalFunction = () => {
+      setShowModal(true);
+    };
 
   const images1 = (
     <div className="flex-1 flex-grow flex ">
-      {/* images */}
       <img
         className="flex-1 min-w-0 object-cover"
         src="/images/services/coal.jpg"
@@ -46,7 +50,6 @@ export default function Services() {
 
   const images2 = (
     <div className="flex-1 flex-grow flex">
-      {/* images  */}
       <img
         className="flex-1 min-w-0 object-cover "
         src="/images/services/avocado.jpg"
@@ -61,7 +64,6 @@ export default function Services() {
   return (
     <section id="services">
       <div className="flex flex-col items-center justify-center bg-black min-h-[128px]">
-        {/* header */}
         <img src="/images/services/deco-line.svg" />
         <h2 className="text-white text-[35px]">Services</h2>
       </div>
@@ -72,7 +74,7 @@ export default function Services() {
             imageComponent={images1}
             title={text1.title}
             content={text1.content}
-            onReadMore={text1.onReadMore}
+            onReadMore={() => modalFunction()}
             flip={false}
           />
 
@@ -80,11 +82,14 @@ export default function Services() {
             imageComponent={images2}
             title={text2.title}
             content={text2.content}
-            onReadMore={text2.onReadMore}
+            onReadMore={() => modalFunction()}
             flip={true}
           />
+          {showModal && (
+            <ServiceModal onClose={() => setShowModal(false)}/>
+          )}
         </div>
       </div>
     </section>
-  )
+  );
 }
