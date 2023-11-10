@@ -55,10 +55,10 @@ const ServiceModal = ({onClose}) => {
                 Our portfolio includes a diverse range of minerals, each
                 tailored to specific industrial applications. We provide
                 detailed information about the minerals we deal with, their
-                applications, and the industries they serve. Whether it's
+                applications, and the industries they serve. Whether it is
                 minerals used in construction, manufacturing, or other sectors,
                 we have you covered. By understanding the unique properties and
-                uses of these minerals, we're well-equipped to meet your
+                uses of these minerals, we are well-equipped to meet your
                 specific needs.
               </p>
             </div>
@@ -75,7 +75,7 @@ const ServiceModal = ({onClose}) => {
                 Our commitment to ethical sourcing practices not only ensures
                 the sustainability of these resources but also helps us build
                 trust with our clients. We recognize the importance of
-                responsible mineral sourcing in today's global market, and we're
+                responsible mineral sourcing in todays global market, and we are
                 dedicated to making a positive impact.
               </span>
             </p>
@@ -100,10 +100,10 @@ const ServiceModal = ({onClose}) => {
                 Our portfolio includes a diverse range of minerals, each
                 tailored to specific industrial applications. We provide
                 detailed information about the minerals we deal with, their
-                applications, and the industries they serve. Whether it's
+                applications, and the industries they serve. Whether it is
                 minerals used in construction, manufacturing, or other sectors,
                 we have you covered. By understanding the unique properties and
-                uses of these minerals, we're well-equipped to meet your
+                uses of these minerals, we are well-equipped to meet your
                 specific needs.
               </p>
             </div>
@@ -120,7 +120,7 @@ const ServiceModal = ({onClose}) => {
                 Our commitment to ethical sourcing practices not only ensures
                 the sustainability of these resources but also helps us build
                 trust with our clients. We recognize the importance of
-                responsible mineral sourcing in today's global market, and we're
+                responsible mineral sourcing in todays global market, and we are
                 dedicated to making a positive impact.
               </span>
             </p>
